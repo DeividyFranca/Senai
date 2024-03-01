@@ -1,0 +1,163 @@
+<html>
+
+<head>
+
+    <title>Cadastro e Quiz Forms</title>
+
+</head>
+
+<style>
+    #cadastro {
+        background-color: blue;
+        color: white;
+        font-family: calibri;
+        text-align: center;
+    }
+
+    #quiz {
+        background-color: green;
+        color: white;
+        font-family: arial;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <div id="cadastro">
+
+        <h1>Cadastro</h1>
+
+        <form>
+
+            <p><label for="nomec">Nome Completo:</label><br>
+                <input type="text" id="nomec" name="nomecompleto" value="ex: Deividy Tadim">
+            </p>
+
+            <p><label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" value="example@gmail.com">
+            </p>
+
+            <p><label for="CPF">CPF:</label><br>
+                <input type="number" id="CPF" name="cpf" value="ex: 999.999.999-99">
+            </p>
+
+            <p><label for="datanasc">Data de Nascimento:</label><br>
+                <input type="date" id="datanasc">
+            </p>
+
+        </form>
+
+        <p>Sexo:</p>
+
+        <form>
+
+            <input type="radio" id="sexo_1" name="sexo" value="Masculino">
+            <label for="sexo_1">Masculino</label><br>
+
+            <input type="radio" id="sexo_2" name="sexo" value="Feminino">
+            <label for="sexo_2">Feminino</label><br>
+
+            <input type="radio" id="sexo_3" name="sexo" value="Outros">
+            <label for="sexo_3">Outros</label><br>
+
+        </form>
+
+    </div>
+
+    <div id="quiz">
+
+        <h3>Questão 1:</h3>
+        <h3>O que a tag "input type=text" permite exibir na tela do usuário?</h3>
+
+        <form>
+
+            <input type="radio" id="true" name="quest_1"
+                value="a) Exibe um campo de entrada para texto de linha única.">
+            <label for="true">a) Exibe um campo de entrada para texto de linha única.</label><br>
+
+            <input type="radio" id="false_1" name="quest_1"
+                value="b) Exibe um campo de saída para texto de linha única.">
+            <label for="false_1">a) Exibe um campo de saída para texto de linha única.</label><br>
+
+            <input type="radio" id="false_2" name="quest_1"
+                value="c) Exibe um campo de entrada para texto de linha múltipla.">
+            <label for="false_2">c) Exibe um campo de entrada para texto de linha múltipla.</label><br>
+
+        </form>
+
+        <h3>Questão 2:</h3>
+        <h3>O que a tag "input type=radio" permite exibir na tela do usuário?</h3>
+
+        <form>
+
+            <input type="radio" id="false_1" name="quest_2"
+                value="a) Exibe um botão de opção para selecionar uma das muitas opções.">
+            <label for="false_1">a) Exibe um botão de opção para selecionar duas das muitas opções.</label><br>
+
+            <input type="radio" id="true" name="quest_2"
+                value="b) Exibe um botão de opção para selecionar uma das muitas opções.">
+            <label for="true">b) Exibe um botão de opção para selecionar uma das muitas opções.</label><br>
+
+            <input type="radio" id="false_2" name="quest_2"
+                value="c) Exibe dois botões de opção para selecionar uma das muitas opções.">
+            <label for="true">c) Exibe dois botões de opção para selecionar uma das muitas opções.</label><br>
+
+        </form>
+
+        <h3>Questão 3:</h3>
+        <h3>O que a tag "input type=checkbox" permite exibir na tela do usuário?</h3>
+
+        <form>
+
+            <input type="radio" id="false_1" name="quest_3"
+                value="a) Exibe uma caixa de seleção para selecionar duas ou mais opções.">
+            <label for="false_1">a) Exibe uma caixa de seleção para selecionar duas ou mais opções.</label><br>
+
+            <input type="radio" id="false_2" name="quest_3"
+                value="b) Exibe uma caixa de seleção para selecionar uma opção.">
+            <label for="false_2">b) Exibe uma caixa de seleção para selecionar uma opção.</label><br>
+
+            <input type="radio" id="true" name="quest_3"
+                value="c) Exibe uma caixa de seleção para selecionar zero ou mais opções">
+            <label for="true">c) Exibe uma caixa de seleção para selecionar zero ou mais opções.</label><br>
+
+        </form>
+
+        <h3>Questão 4:</h3>
+        <h3>O que a tag "input type=submit" permite exibir na tela do usuário?</h3>
+
+        <form>
+
+            <input type="radio" id="true" name="quest_4" value="a) Exibe um botão de envio para enviar o formulário.">
+            <label for="true">a) Exibe um botão de envio para enviar o formulário.</label><br>
+
+            <input type="radio" id="false_1" name="quest_4" value="b) Exibe um botão de limpar o formulário.">
+            <label for="false_1">b) Exibe um botão de limpar o formulário.</label><br>
+
+            <input type="radio" id="false_2" name="quest_4" value="c) Exibe um botão de carregar o formulário.">
+            <label for="false_2">c) Exibe um botão de carregar o formulário.</label><br>
+
+        </form>
+
+        <h3>Questão 5:</h3>
+        <h3>O que a tag "input type=button" permite exibir na tela do usuário?</h3>
+
+        <form>
+
+            <input type="radio" id="false_1" name="quest_5" value="a) Exibe um botão não clicável.">
+            <label for="true">a) Exibe um botão não clicável.</label><br>
+
+            <input type="radio" id="true" name="quest_5" value="b) Exibe um botão clicável.">
+            <label for="true">b) Exibe um botão clicável.</label><br>
+
+            <input type="radio" id="false_2" name="quest_5" value="c) Exibe um botão para sair do formulário.">
+            <label for="false_2">c) Exibe um botão para sair do formulário.</label><br>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
