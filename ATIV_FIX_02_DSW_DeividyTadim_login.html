@@ -1,0 +1,47 @@
+<html>
+
+<head>
+
+    <title>Login e Senha SENAI.</title>
+
+</head>
+
+<style>
+    body {
+        background-color: blue;
+        color: white;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <img src="senai2.png">
+
+    <p>Insira seu Login:</p>
+    <input type="text" id="login">
+    <p>Insira sua Senha:</p>
+    <input type="password" id="senha"><br>
+    <p><button onclick="logar()">Confirmar</button></p>
+    <p id="confirmação"></p>
+
+</body>
+
+<script>
+
+    const login = "Deividy";
+    const senha = "123";
+
+    function logar() {
+        let log = document.getElementById("login").value;
+        let password = document.getElementById("senha").value;
+        if (login == log && senha == password) {
+            document.getElementById("confirmação").textContent = "Login realizado com Sucesso!";
+        }
+        else {
+            document.getElementById("confirmação").textContent = "Acesso Negado!";
+        }
+    }
+</script>
+
+</html>
